@@ -41,3 +41,52 @@ function logSearch(result) {
         }
     });
 }
+
+function searchConcert(artist) {
+    const queryUrl = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
+
+    axios.get(queryUrl)
+        .then(function(response) {
+
+            var data = response.data;
+
+            for (let i = 0; i < data.length; i++) {
+                let result = `Venue: ${data[i].venue.name}\nLocation: ${data[i].venue.city},${data[i].venue.region}\nEvent Date: ${moment.utc(data[i].datetime).format("MM/DD/YYYY")}\n-----------------------------------------`;
+
+                console.log(result);
+
+                logSearch(result);
+            }
+
+        })
+        .catch(function(err) {
+            console.log("Error occurred " + err);
+        });
+}
+
+function searchSpotify(song) {
+    if (song === "") {
+        song = "Ace+of+Base+The+Sign";
+    }
+
+    var spotify = new Spotify(keys.spotify);
+
+    spotify
+        .search({ type: 'track', query: song, limit: 5, market: 'CA' })
+        .then(function(response) {
+            const items = response.tracks.items;
+
+            for (let i = 0; i < items.length; i++) {
+                let result = `Artist(s): ${items[i].album.artists[0].name}\nSong: ${items[i].name}\nPreview: ${items[i].preview_url}\nAlbum: ${items[i].album.name}\n-----------------------------------------------------------------------`;
+
+                console.log(result);
+
+                logSearch(result);
+            }
+
+        })
+        .catch(function(err) {
+            console.log("Error occurred " + err);
+        });
+
+}
