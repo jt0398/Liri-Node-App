@@ -90,3 +90,26 @@ function searchSpotify(song) {
         });
 
 }
+
+function searchMovie(movie) {
+    const queryUrl = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=" + keys.omdb.secret;
+
+    axios.get(queryUrl)
+        .then(function(response) {
+
+            var data = response.data;
+
+            const imdbRating = data.Ratings.find(rating => rating.Source === "Internet Movie Database");
+            const rottenRating = data.Ratings.find(rating => rating.Source === "Rotten Tomatoes");
+
+            let result = `Movie: ${data.Title}\Year: ${data.Year}\nIMDB Rating: ${imdbRating.Value}\nRotten Tomatoes Rating: ${rottenRating.Value}\nCountry: ${data.Country}\nLanguage: ${data.Language}\nPlot: ${data.Plot}\nActors: ${data.Actors}`;
+
+            console.log(result);
+
+            logSearch(result);
+
+        })
+        .catch(function(err) {
+            console.log("Error occurred " + err);
+        });
+}
