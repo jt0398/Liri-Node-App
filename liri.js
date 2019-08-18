@@ -113,3 +113,21 @@ function searchMovie(movie) {
             console.log("Error occurred " + err);
         });
 }
+
+function readTextFile() {
+    const filename = "random.txt";
+
+    fs.readFile(filename, "utf-8", function(error, data) {
+        if (error) {
+            return console.log("Error occurred " + error);
+        }
+
+        const texts = data.split("\n");
+
+        texts.forEach(function(text) {
+            let cmd = text.split(",");
+
+
+        });
+    });
+}
