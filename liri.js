@@ -30,3 +30,14 @@ function runCommand(commandName, searchValue) {
             break;
     }
 }
+
+function logSearch(result) {
+
+    const logFilename = "log.txt";
+
+    fs.writeFile(logFilename, result + "\n\n", function(err) {
+        if (err) {
+            console.log("Error occurred " + err);
+        }
+    });
+}
