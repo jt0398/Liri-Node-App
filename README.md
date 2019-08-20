@@ -3,11 +3,10 @@
 Liri will search Spotify for songs, Bands in Town for concerts, and OMDB for movies. It also reads input from a text file called random.txt and executes all of instruction in the file. For every search, the results are logged into a file called log.txt.
 
 The application uses the following technologies to provide search results to the user:
-  * Axios
-  * Dotenv
-  * Moment
-  * Node-Spotify-Api
-
+  * Axios - to perform RESTFUL request
+  * Node-Spotify-Api - to get information about a specific song
+  * OMDB API - to get information about a specific movie
+  * Bands In Town API - to get information about an artist's upcoming concerts
 
 
 Liri takes in one of the following commands:
