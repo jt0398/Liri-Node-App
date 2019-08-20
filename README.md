@@ -14,21 +14,23 @@ Liri takes in one of the following commands:
 
    * `concert-this` 
     
-    **node liri concert-this bruno mars**
+      **node liri concert-this bruno mars**
 
    * `spotify-this-song`
     
-    **node liri spotify-this-song man in the mirror**
+      **node liri spotify-this-song man in the mirror**
 
    * `movie-this`
     
-    **node liri movie-this forrest gump**
+      **node liri movie-this forrest gump**
 
    * `do-what-it-says`
     
-    **node liri do-what-it-says**
+      **node liri do-what-it-says**
 
-  ![](images/concert.jpg)
+
+
+      ![](images/concert.jpg)
 
 View (demo) [https://jt0398.github.io/Liri-Node-App/]
 
