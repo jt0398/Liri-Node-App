@@ -6,6 +6,10 @@ var axios = require("axios"); //module for Promise API
 var Spotify = require('node-spotify-api'); //module for Spotify REST API
 var moment = require('moment'); //ECMAScript 6 modules of Moment library (Date manipulation)
 
+if (process.argv.length < 3) {
+    return console.log("1) Please choose one of the commands:\n concert-this\n spotify-this-song\n movie-this\n do-what-it-says\n2) Specify a search text\n\nFor example node liri spotify-this-song I believe");
+}
+
 var command = process.argv[2].toLowerCase(); //Get command type input
 var searchText = process.argv.slice(3).join("+"); //Get search value from input
 
@@ -15,24 +19,23 @@ runCommand(command, searchText);
 function runCommand(commandName, searchValue) {
     switch (commandName) {
         case "concert-this":
-            //Searches concert
-            console.log("\nSEARCHING concert for " + searchValue + "....\n");
+            //Searches concert          
             searchConcert(searchValue);
             break;
         case "spotify-this-song":
             //Searches Spotify
-            console.log("\nSEARCHING song " + searchValue + "....\n");
             searchSpotify(searchValue);
             break;
         case "movie-this":
             //Searches Movies
-            console.log("\nSEARCHING movie " + searchValue + "....\n");
             searchMovie(searchValue);
             break;
         case "do-what-it-says":
             //Loads list of commands from file
             readTextFile();
             break;
+        default:
+            console.log("Please choose one of the commands:\nconcert-this\nspotify-this-song\nmovie-this\ndo-what-it-says");
     }
 }
 
@@ -51,6 +54,10 @@ function logSearch(result) {
 
 //Searches Bands In Town API for an artist's concert events
 function searchConcert(artist) {
+    if (!artist) {
+        artist = "bruno+mars";
+    }
+
     const queryUrl = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 
     //Calls API
@@ -58,7 +65,11 @@ function searchConcert(artist) {
         .then(function(response) {
 
             //API returned result
-            var data = response.data;
+            const data = response.data;
+
+            if (data.length === 0) {
+                return console.log("No results");
+            }
 
             //Loops thru the result set
             for (let i = 0; i < data.length; i++) {
@@ -80,7 +91,7 @@ function searchConcert(artist) {
 function searchSpotify(song) {
 
     //If there's no song provided, default song is The Sign
-    if (song === "") {
+    if (!song) {
         song = "Ace+of+Base+The+Sign";
     }
 
@@ -95,6 +106,10 @@ function searchSpotify(song) {
 
             //API returned result
             const items = response.tracks.items;
+
+            if (items.length === 0) {
+                return console.log("No results");
+            }
 
             //Loops thru the result set
             for (let i = 0; i < items.length; i++) {
@@ -115,6 +130,10 @@ function searchSpotify(song) {
 
 //Searches OMDB for movie
 function searchMovie(movie) {
+    if (!movie) {
+        movie = "forrest+gump";
+    }
+
     const queryUrl = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=" + keys.omdb.secret;
 
     //Calls API
@@ -122,15 +141,27 @@ function searchMovie(movie) {
         .then(function(response) {
 
             //API returned result
-            var data = response.data;
+            const data = response.data;
 
-            //Gets the IMDB rating object
-            const imdbRating = data.Ratings.find(rating => rating.Source === "Internet Movie Database");
+            let imdbRating;
+            let rottenRating;
 
-            //Gets the Rotten Tomato rating object
-            const rottenRating = data.Ratings.find(rating => rating.Source === "Rotten Tomatoes");
+            if (!data.Title) {
+                return console.log("No results");
+            }
 
-            let result = `Movie: ${data.Title}\Year: ${data.Year}\nIMDB Rating: ${imdbRating.Value}\nRotten Tomatoes Rating: ${rottenRating.Value}\nCountry: ${data.Country}\nLanguage: ${data.Language}\nPlot: ${data.Plot}\nActors: ${data.Actors}`;
+            if (data.Ratings != null) {
+                //Gets the IMDB rating object
+                imdbRating = data.Ratings.find(rating => rating.Source === "Internet Movie Database");
+
+                //Gets the Rotten Tomato rating object
+                rottenRating = data.Ratings.find(rating => rating.Source === "Rotten Tomatoes");
+            } else {
+                imdbRating = { Value: "Not Available" };
+                rottenRating = { Value: "Not Available" };
+            }
+
+            let result = `Movie: ${data.Title}\nYear: ${data.Year}\nIMDB Rating: ${imdbRating.Value}\nRotten Tomatoes Rating: ${rottenRating.Value}\nCountry: ${data.Country}\nLanguage: ${data.Language}\nPlot: ${data.Plot}\nActors: ${data.Actors}\n-----------------------------------------------------------------------`;
 
             console.log(result);
 

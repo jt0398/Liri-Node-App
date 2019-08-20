@@ -1,0 +1,125 @@
+Venue: Park Theater
+Location: Las Vegas,NV
+Event Date: 09/03/2019
+-----------------------------------------
+
+Venue: Park Theater
+Location: Las Vegas,NV
+Event Date: 09/04/2019
+-----------------------------------------
+
+Venue: Park Theater
+Location: Las Vegas,NV
+Event Date: 09/10/2019
+-----------------------------------------
+
+Venue: Park Theater
+Location: Las Vegas,NV
+Event Date: 09/07/2019
+-----------------------------------------
+
+Venue: Park Theater
+Location: Las Vegas,NV
+Event Date: 09/13/2019
+-----------------------------------------
+
+Venue: Park Theater
+Location: Las Vegas,NV
+Event Date: 09/09/2019
+-----------------------------------------
+
+Venue: Park Theater
+Location: Las Vegas,NV
+Event Date: 09/14/2019
+-----------------------------------------
+
+Movie: Forrest Gump
+Year: 1994
+IMDB Rating: 8.8/10
+Rotten Tomatoes Rating: 72%
+Country: USA
+Language: English
+Plot: The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.
+Actors: Tom Hanks, Rebecca Williams, Sally Field, Michael Conner Humphreys
+-----------------------------------------------------------------------
+
+Artist(s): Michael Jackson
+Song: Man in the Mirror - 2012 Remaster
+Preview: https://p.scdn.co/mp3-preview/9b6d9730b531defe7f54062497657293e67690fe?cid=a09760315576403db9c1f25c62d13b28
+Album: Bad 25th Anniversary
+-----------------------------------------------------------------------
+
+Artist(s): Michael Jackson
+Song: Man in the Mirror
+Preview: https://p.scdn.co/mp3-preview/956569fa481d2e3807f1e6a1f78b4e5c9ea99530?cid=a09760315576403db9c1f25c62d13b28
+Album: HIStory - PAST, PRESENT AND FUTURE - BOOK I
+-----------------------------------------------------------------------
+
+Artist(s): Michael Jackson
+Song: Man in the Mirror - 2012 Remaster
+Preview: https://p.scdn.co/mp3-preview/9b6d9730b531defe7f54062497657293e67690fe?cid=a09760315576403db9c1f25c62d13b28
+Album: Bad (Remastered)
+-----------------------------------------------------------------------
+
+Artist(s): Michael Jackson
+Song: Man in the Mirror - Remastered Version
+Preview: https://p.scdn.co/mp3-preview/71e5a551be7b2d12c0649fa29c49855a512dca50?cid=a09760315576403db9c1f25c62d13b28
+Album: Michael Jackson's This Is It
+-----------------------------------------------------------------------
+
+Artist(s): Russell Dickerson
+Song: Man in the Mirror - Recorded at Sound Stage Studios Nashville
+Preview: https://p.scdn.co/mp3-preview/d8ad2dc68ec47bcad1cbffc6b8c5a39fe1f8d7a9?cid=a09760315576403db9c1f25c62d13b28
+Album: Spotify Singles
+-----------------------------------------------------------------------
+
+Movie: Remember the Titans
+Year: 2000
+IMDB Rating: 7.8/10
+Rotten Tomatoes Rating: 73%
+Country: USA
+Language: English
+Plot: The true story of a newly appointed African-American coach and his high school team on their first season as a racially integrated unit.
+Actors: Denzel Washington, Will Patton, Wood Harris, Ryan Hurst
+-----------------------------------------------------------------------
+
+Venue: Curacao North Sea Jazz Festival
+Location: Willemstad, Curaçao,
+Event Date: 08/31/2019
+-----------------------------------------
+
+Venue: Seminole Hard Rock Hotel & Casino - Hollywood, FL
+Location: Hollywood,FL
+Event Date: 10/25/2019
+-----------------------------------------
+
+Artist(s): Backstreet Boys
+Song: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=a09760315576403db9c1f25c62d13b28
+Album: The Hits--Chapter One
+-----------------------------------------------------------------------
+
+Artist(s): Backstreet Boys
+Song: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/b8c2410a5acb68b462be6ac85f1312430e2b149c?cid=a09760315576403db9c1f25c62d13b28
+Album: Millennium
+-----------------------------------------------------------------------
+
+Artist(s): Mick Jensen
+Song: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/f8181f66713983fab073e133e23c741acbe00d75?cid=a09760315576403db9c1f25c62d13b28
+Album: I Want It That Way
+-----------------------------------------------------------------------
+
+Artist(s): Anthem Lights
+Song: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/4a163fbfa2dbbe4433f277e0e7395dca656364f5?cid=a09760315576403db9c1f25c62d13b28
+Album: Covers Part IV
+-----------------------------------------------------------------------
+
+Artist(s): Backstreet Boys
+Song: I Want It That Way - Reimagined
+Preview: https://p.scdn.co/mp3-preview/7f612d6ba66571500e981e74bb36e14b9906be77?cid=a09760315576403db9c1f25c62d13b28
+Album: I Want It That Way (Reimagined)
+-----------------------------------------------------------------------
+

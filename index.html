@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LIRI Bot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="container mb-5">
+        <h1>LIRI Bot Demo</h1>
+
+        <p>Liri will search Spotify for songs, Bands in Town for concerts, and OMDB for movies. It also reads input from a text file called random.txt and executes all of instruction in the file. For every search, the results are logged into a file called
+            log.txt.
+        </p>
+
+        <p>The application uses the following technologies to provide search result to the user:
+            <ul>
+                <li>Axios</li>
+                <li>Dotenv</li>
+                <li>Moment</li>
+                <li>Node-Spotify-Api</li>
+            </ul>
+        </p>
+
+        <p>Liri takes in one of the following commands:</p>
+
+        <p><code>concert-this &lt;artist name&gt;</code><br/>
+            <strong>node liri concert-this bruno mars</strong>
+        </p>
+
+        <p><code>spotify-this-song &lt;song&gt;</code><br/>
+            <strong>node liri spotify-this-song man in the mirror</strong>
+        </p>
+
+        <p><code>movie-this &lt;movie title&gt;</code><br/>
+            <strong>node liri movie-this forrest gump</strong>
+        </p>
+
+        <p><code>do-what-it-says</code><br/>
+            <strong>node liri do-what-it-says</strong>
+        </p>
+
+        <iframe width="850" height="600" src="https://drive.google.com/file/d/16nmS_lZJrUEMiHT8EuT5QXD1LBtfiATq/preview"></iframe>
+
+    </section>
+</body>
+
+</html>
