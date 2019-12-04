@@ -19,11 +19,15 @@ Liri takes in one of the following commands:
 
 - `concert-this`
 
+  To display a list of concert for an artist.
+
   ```
   node liri concert-this bruno mars
   ```
 
 - `spotify-this-song`
+
+  To display information about a song.
 
   ```
   node liri spotify-this-song man in the mirror
@@ -31,11 +35,15 @@ Liri takes in one of the following commands:
 
 - `movie-this`
 
+  To display information about a movie.
+
   ```
   node liri movie-this forrest gump
   ```
 
 - `do-what-it-says`
+
+  Commands above can be run as a batch when added to the random.txt file.
 
   ```
   node liri do-what-it-says
