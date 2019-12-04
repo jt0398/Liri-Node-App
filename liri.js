@@ -1,9 +1,9 @@
 //Add required modules
-require("dotenv").config(); //loads environment variables from a .env file into process.env
-var keys = require("./keys.js"); //exported objects of the API keys
-var fs = require("fs"); //node file system module
-var axios = require("axios"); //module for Promise API
-var Spotify = require('node-spotify-api'); //module for Spotify REST API
+require("dotenv").config(); //Loads environment variables from a .env file into process.env
+var keys = require("./keys.js"); //Exported objects of the API keys
+var fs = require("fs"); //Node file system module
+var axios = require("axios"); //Module for Promise API
+var Spotify = require('node-spotify-api'); //Module for Spotify REST API
 var moment = require('moment'); //ECMAScript 6 modules of Moment library (Date manipulation)
 
 if (process.argv.length < 3) {
