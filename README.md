@@ -2,7 +2,7 @@
 
 Liri will search Spotify for songs, Bands in Town for concerts, and OMDB for movies. It also reads input from a text file called random.txt and executes all of instruction in the file. For every search, the results are logged into a file called log.txt.
 
-<h3>View (demo) [https://jt0398.github.io/Liri-Node-App/]</h3>
+<h3>View [demo](https://jt0398.github.io/Liri-Node-App/)</h3>
 
 ## Tech Stack
 
